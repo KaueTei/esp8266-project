@@ -6,7 +6,7 @@ let ledState = false;
 const toggleLED = () => {
   ledState = !ledState;
   // Code to control the LED goes here
-  //console.log(`LED state: ${ledState}`);
+  console.log(`LED state: ${ledState}`);
 };
 // criando um  cronometro para a cada 1 segundo trocar o estado do led
 const job = new cron.CronJob("*/1 * * * * *", toggleLED);
